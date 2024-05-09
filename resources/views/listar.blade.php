@@ -11,13 +11,13 @@
 
     <table>
 
-        @foreach ($cursos as $curso)                    
+        @foreach ($cursos as $curso)
 
         <tr>
             <td>{{$curso->id}}</td>
             <td>{{$curso->name}}</td>
             <td>{{$curso->descripcion}}</td>
-            <td><a href="{{route('curso.show', $curso->id)}}">Mostrar</a></td>
+            <td><a href="{{route('curso.show', $curso->id)}}" >Mostrar</a></td>
 
         </tr>
 
