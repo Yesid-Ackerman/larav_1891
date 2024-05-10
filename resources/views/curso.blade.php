@@ -7,27 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-   
-    <h1>FORMULARIO PRODUCTO</h1>
+
+    <h1>FORMULARIO CURSO    </h1>
 
     <form action="{{route('curso.Store')}}"  method="POST" >
  @csrf
         <label>
-            Ingrese el nombre del producto:
+            Ingrese el nombre del Curso:
             <br>
             <input type="text" name="name">
         </label>
         <br><br>
         <label>
-            Ingrese el precio: :
+            Ingrese la descripcion:
             <br>
             <input type="text" name="descripcion">
         </label>
         <br><br><br>
 
         <button type="submit">Enviar Formulario:</button>
-       
-   
+
+
     </form>
 
 </body>

@@ -16,7 +16,7 @@ class CursoController extends Controller
     }
 
     public function create(){
-        
+
         return view('curso');
     }
 
@@ -34,12 +34,9 @@ class CursoController extends Controller
 
     }
 
-    public Function destroy (Curso $curso){
-
-        $curso ->delete();
-        return redirect()-> route('curso.indexx');
-        
+    public function destroy(Curso $curso) {
+        $curso->delete();
+        return redirect()->route('curso.index');
     }
-
 
 }

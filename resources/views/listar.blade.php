@@ -21,6 +21,11 @@
 
         </tr>
 
+            <form action="{{route('curso.destroy',$curso->id)}}" method="POST">
+                @csrf
+                @method('delete')
+                <td><button type="submit">Eliminar</button></td>
+            </form>
         @endforeach
 
     </table>
