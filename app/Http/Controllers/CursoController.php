@@ -4,10 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Models\Curso;
 use Illuminate\Http\Request;
+use App\Models\user;
+use App\Models\Category;
+use App\Models\Post;
 use PhpParser\Builder\Function_;
 
 class CursoController extends Controller
 {
+
+    public function consultasElokuent(){
+
+        $user = User::find(2);
+        return $user->posts;
+
+
+    }
+
 
     public function index(){
 

@@ -19,3 +19,6 @@ Route::get('curso/{curso}/edit',[CursoController::class,'edit'])->name('curso.ed
 Route::get('listado',[ArticleController::class,'indexx'])-> name('indexx');
 Route::get('article',[ArticleController::class,'create_art']);
 Route::post('/store',[ArticleController::class,'store'])->name('article.store');
+
+
+Route::get('consultas', [CursoController::class, 'consultasElokuent']);
