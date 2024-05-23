@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class profesor extends Model
 {
-   //  Relacion Uno A Uno
+
    public function modulo(){
-    //$profesor = Profesor::where('user_id',$this->id)->first();
+    //  Relacion Uno A Uno
    return $this->hasOne('App\Models\modulo');
 }
 }

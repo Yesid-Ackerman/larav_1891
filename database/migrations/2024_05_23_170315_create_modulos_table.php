@@ -18,11 +18,13 @@ return new class extends Migration
             //Atributos foraneos
                 $table->unsignedBigInteger('alumno_id')->nullable();
                 $table->unsignedBigInteger('profesor_id')->nullable();
-               //referenciando la tabla alumnos
+
+                //referenciando la tabla alumno
                 $table->foreign('alumno_id')
                     ->references('id')
                     ->on('alumnos')->onDelete('set null');
-                //referenciando la tabla profesores
+
+                    //referenciando la tabla profesor
                 $table->foreign('profesor_id')
                 ->references('id')
                 ->on('profesors')->onDelete('set null');

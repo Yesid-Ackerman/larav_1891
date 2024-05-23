@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class modulo extends Model
 {
-     //Relacion Uno a Muchos (Inversa) con alumno
+     //Relacion Uno a Muchos con alumno
      public function alumno(){
         return $this->belongsTo('App\Models\alumno');
 
-     //Relacion Uno a uno (Inversa) con profesor
+     //Relacion Uno a uno con profesor
     }  public function profesor(){
-        return $this->hasOne('App\Models\profesor');
+        return $this->belongsTo('App\Models\profesor');
     }
 }

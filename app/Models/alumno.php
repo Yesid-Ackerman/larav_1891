@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class alumno extends Model
 {
-      //Relacion Uno a Muchos (Inversa) con Category
+      //Relacion Uno a Muchos con modulo
   public function modulo(){
-    return $this->belongsTo('App\Models\modulo');
+    return $this->hasMany('App\Models\modulo');
 }
 
 
