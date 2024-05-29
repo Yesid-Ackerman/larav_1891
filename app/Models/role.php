@@ -11,6 +11,7 @@ class role extends Model
 {
     use HasFactory;
 
+    //Relacion muchos a muchos con User
     public function users(){
         return $this->BelongsToMany("App\Models\User");
     }
