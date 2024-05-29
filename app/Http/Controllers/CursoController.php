@@ -38,7 +38,7 @@ class CursoController extends Controller
         $curso->name=$request->name;
         $curso->descripcion=$request->descripcion;
         $curso->save();
-        return $request;
+        return view('cursos.curso');
     }
 
     public Function show (Curso $curso){

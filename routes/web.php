@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('cursos/listar',[CursoController::class,'index'])->name('curso.index');
 Route::get('cursos/curso',[CursoController::class,'create']);
-Route::post('cursos/store', [CursoController::class,'store'])->name('cursos.store');
+Route::post('cursos/Store', [CursoController::class,'store'])->name('cursos.Store');
 Route::get('curso/{curso}',[CursoController::class,'show'])->name('curso.show');
 Route::put('curso/{curso}',[CursoController::class,'update'])->name('curso.update');
 Route::delete('curso/{curso}',[CursoController::class,'destroy'])->name('curso.destroy');
