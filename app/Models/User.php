@@ -16,4 +16,8 @@ class user extends Model
     public function posts(){
         return $this->hasMany('App\Models\Post');//RECUPERAR LA COLECCION DE POST QUE PERTENECEN A ESTE USUARIO
     }
+
+    public function roles(){
+        return $this->BelongsToMany("App\Models\Role");
+    }
 }

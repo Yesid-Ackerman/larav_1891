@@ -16,6 +16,7 @@ class CursoController extends Controller
 
         $user = User::find(2);
         return $user->posts;
+        
 
 
     }
