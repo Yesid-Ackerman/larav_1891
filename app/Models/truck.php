@@ -1,15 +1,15 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class truck extends Model
+class Truck extends Model
 {
     use HasFactory;
-    //Relacion muchos a muchos con TruckDriver
- public function truckdriver(){
-    return $this->BelongsToMany("App\Models\Truckdriver");
+
+    public function Truck_driver()
+    {
+        return $this->belongsToMany('App\Models\Truck_driver','Trucktrucker');
     }
 }

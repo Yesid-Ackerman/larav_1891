@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CursoController;
+use App\Http\Controllers\RoleuserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,3 +23,6 @@ Route::post('/store',[ArticleController::class,'store'])->name('article.store');
 
 
 Route::get('consultas', [CursoController::class, 'consultasElokuent']);
+
+Route::get('usuario/asociar_rol',[RoleUserController::class,'asociar']);
+Route::post('usuario/asociar_rol/store',[RoleUserController::class,'store'])->name('role_user.store');
