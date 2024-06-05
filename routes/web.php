@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\LogInController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CursoController;
 use App\Http\Controllers\RoleuserController;
@@ -26,3 +26,5 @@ Route::get('consultas', [CursoController::class, 'consultasElokuent']);
 
 Route::get('usuario/asociar_rol',[RoleUserController::class,'asociar']);
 Route::post('usuario/asociar_rol/store',[RoleUserController::class,'store'])->name('role_user.store');
+
+Route::get('login/home',[LoginController::class,'create']);
