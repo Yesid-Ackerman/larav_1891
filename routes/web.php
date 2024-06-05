@@ -28,3 +28,4 @@ Route::get('usuario/asociar_rol',[RoleUserController::class,'asociar']);
 Route::post('usuario/asociar_rol/store',[RoleUserController::class,'store'])->name('role_user.store');
 
 Route::get('login/home',[LoginController::class,'create']);
+Route::post('login/store',[LogInController::class,'store'])->name('login.Store');
